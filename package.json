@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Rorvern/icecaps/issues"
   },
-  "homepage": "https://github.com/Rorvern/icecaps#readme"
+  "homepage": "https://github.com/Rorvern/icecaps#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
