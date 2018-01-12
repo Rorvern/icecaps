@@ -1,29 +1,20 @@
 body {
-    background: url('https://aos.iacpublishinglabs.com/question/aq/1400px-788px/causes-polar-ice-caps-melt_fa6d6b2b5c47857a.jpg?domain=cx.aos.ask.com');
+    background: url("melting.jpg");
     background-size: cover;
-    padding-top: 25%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.back {
-    font-size: 50;
-    border-radius: 12px;
+.btn-link {
     border-color: black;
-    background-color: whitesmoke;
-    float: right;
-    margin-right: 50px;
+    font-size: 40px;
+    background-color: #181C49;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 20px;
 }
-.draw {
-    font-size: 50;
-    border-radius: 12px;
-    border-color: black;
-    background-color: whitesmoke;
-    margin-top: 0%;
-    margin-left: 24%
-}
-.learn {
-    font-size: 50;
-    border-radius: 12px;
-    border-color: black;
-    background-color: whitesmoke;
-    float: left;
-    margin-left: 50px;
+
+.share {
+    font-size: 40px;
 }
