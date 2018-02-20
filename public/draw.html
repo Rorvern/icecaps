@@ -1,13 +1,35 @@
 <html>
     <head>
+        <title>Ice Caps</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="canvas"></div>
-        <div class="share-btn">
+        <div class="btn">
+            <button class="reset" id="reset">Reset</button>
             <button class="share" id="share">Share</button>
+        </div>
+        <div class="social-media">
+            <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+            <div>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+            </div>
+        </div>
+        <div class="canvas">
+            <p>What do you think the ice caps will look like in 50 years? Draw it!</p>
         </div>
         <script src="p5.min.js"></script>
         <script src="draw.js"></script>
+        <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script> 
+        <script src="share.js"></script>
     </body>
 </html>
