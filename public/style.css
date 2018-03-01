@@ -15,18 +15,18 @@ body {
     border-radius: 20px;
 }
 
-.reset {
-    font-size: 40px;
-}
-
-.share {
-    font-size: 40px;
-}
-
 .btn {
     display: flex;
     flex-direction: column;
     /*space between the thingy*/
+    -webkit-appearance: none;
+    background-color: #6ACDCA;
+    border-width: 1px;
+    color: #181339;
+    border-color: black;
+    border-radius: 12px;
+    font-size: 40px;
+    padding: 3px
 }
 
 .social-media {
