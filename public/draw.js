@@ -1,14 +1,11 @@
 var drawStarted = false;
+var canvasWidth = window.innerWidth * 0.7 >= 640 ? 640 : window.innerWidth * .7;
+var canvasHeight = window.innerHeight * 0.7 >= 480 ? 480 : window.innerHeight * .7;
+var c;
 
 function setup(){
-    var canvasWidth = windowWidth * 0.7 >= 640 ? 640 : windowWidth * .7;
-    var canvasHeight = windowHeight * 0.7 >= 480 ? 480 : windowHeight * .7;
-    var c = createCanvas(canvasWidth, canvasHeight);
-    background("#181C49");
+    initializeCanvas();
     document.querySelector("#share").addEventListener("click", share);
-    textSize(20);
-    fill("white");
-    text("What do you think the ice caps will look like in 50 years? Draw it!", 10, 30);
     c.touchStarted(function() {
       stroke("white");
       fill("white");
@@ -37,5 +34,14 @@ function share() {
 }
 
 function reset() {
-  var c = createCanvas(canvasWidth, canvasHeight);
+  clear(c);
+}
+
+function initializeCanvas() {
+  clear();
+  c = createCanvas(canvasWidth, canvasHeight);
+  background("#181C49");
+  textSize(20);
+  fill("white");
+  text("What do you think the ice caps will look like in 50 years? Draw it!", 10, 30);
 }
