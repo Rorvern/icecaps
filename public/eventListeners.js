@@ -1,10 +1,12 @@
 $(document).ready(() => {
-    $('.social-media').hide();
+    $('.email').hide();
     $('#share').on('click', () => {
-        $('.social-media').slideToggle();
+        $('.email').slideToggle();
     })
     $('#reset').on('click', () => {
         initializeCanvas();
     })
+    $('.submit').on('click', () => {
+        //send da email
+    })
 })
-
