@@ -1,13 +1,31 @@
 <html>
     <head>
+        <title>Ice Caps</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div id="fb-root"></div>
         <div class="canvas"></div>
-        <div class="share-btn">
-            <button class="share" id="share">Share</button>
+        <div class="btns">
+            <button class="btn" id="reset" >Reset</button>
+            <button class="btn" id="share">Share</button>
+        </div>
+        <form id="share-form">
+            <p>Please input your email here so we can send your prediction to you</p>
+            <input id="email" type="email" name="Email goes here">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="canvas">
+            <p></p>
         </div>
         <script src="p5.min.js"></script>
         <script src="draw.js"></script>
+        <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script> 
+        <script src="eventListeners.js"></script>
     </body>
 </html>
