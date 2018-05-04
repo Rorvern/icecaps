@@ -6,7 +6,7 @@ var c;
 document.getElementById("share-form")
 .addEventListener("submit", (e) => {
   e.preventDefault();
-  const backendUrl = "http://apps.mirman.org:3013";
+  const backendUrl = "https://apps.mirman.org/icecaps-backend";
   const email = document.getElementById("email").value;
   const image = c.canvas.toDataURL("image/png").replace(/data:image\/png;base64,/, '');
   const data = {
